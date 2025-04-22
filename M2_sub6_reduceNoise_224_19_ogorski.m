@@ -35,10 +35,6 @@ startTime = 585;
 
 cleanData(1:startTime) = mean(noisyData(1:startTime));
 
-for i = startTime:10:dataLength
-    cleanData(i:i+9) = mean(noisyData(i:i+9));
-end
-
 for i = startTime:dataLength
     num1 = max(1, i - 51);
     num2   = min(dataLength, i + 51);
@@ -59,6 +55,3 @@ cleanData = cleanData(1:dataLength);
 % source, either modified or unmodified. Neither have we provided
 % access to my code to another. The program we are submitting
 % is our own original work.
-
-
-
