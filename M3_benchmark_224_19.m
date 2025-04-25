@@ -1,4 +1,4 @@
-replace this text with your function definition line
+function [] = M3_benchmark_224_19
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENGR 132 
 % Program Description 
@@ -26,15 +26,20 @@ did you complete the assignment information? delete this line if yes
 
 %% ____________________
 %% INITIALIZATION
+% Find how many data points
+amountData = length(data);
+
+
 
 
 %% ____________________
 %% CALCULATIONS
-
+% Calculate Modified SSE
+modSSE = (sum((actualValue - predictedValue) .^ 2)) / amountData;
 
 %% ____________________
 %% FORMATTED TEXT/FIGURE DISPLAYS
-
+fprintf('The sum of squared errors is: %0.2f \n', modSSE);
 
 %% ____________________
 %% RESULTS

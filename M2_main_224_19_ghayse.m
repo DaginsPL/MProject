@@ -53,7 +53,8 @@ y_h_right = 23.36;
 %% CALCULATIONS
 
 while indx <= numberColumns
-   [Vi, Vf] = M1A_sub3_224_19_massey30(time_vector, velocity_values, AccelerationStart);
+   [smoothData] = M2_sub2_224_19_ogorski(data);
+   [Vi, Vf] = M1A_sub3_224_19_massey30(time_vector, cleanData, AccelerationStart);
 
 
 

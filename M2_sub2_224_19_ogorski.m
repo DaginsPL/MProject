@@ -1,4 +1,4 @@
-function [cleanData] = M2_sub2_224_19_ogorski(noisyData)
+function [smoothData] = M2_sub2_224_19_ogorski(noisyData)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENGR 132 
 % Program Description 
