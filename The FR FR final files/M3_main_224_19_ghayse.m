@@ -33,7 +33,7 @@ function M3_main_224_19_ghayse
 %% ____________________
 %% INITIALIZATION
 %Initializes the data from the CSV file
-data = readmatrix("Sp25_cruiseAuto_experimental_data.csv");
+data = readmatrix("Sp25_cruiseAuto_M3benchmark_data.csv");
 
 % Only pull column 1 for the "x" values
 time_vector = data(:,1);
